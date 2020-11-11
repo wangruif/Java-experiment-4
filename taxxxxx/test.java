@@ -3,8 +3,8 @@ import java.util.*;
 
 public class test {
     public static void main(String[] args){
-        doctoralStudent ds1 = new doctoralStudent("李花呗","男",32);
-        doctoralStudent ds2 = new doctoralStudent("孙白条","男",33);
+        boshisheng ds1 = new boshisheng("李花呗","男",32);
+        boshisheng ds2 = new boshisheng("孙白条","男",33);
 
         try{
             Scanner a = new Scanner(System.in);
