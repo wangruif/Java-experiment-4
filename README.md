@@ -1,6 +1,6 @@
 # Java-experiment-4
 # 北京石油化工第四次实验
-计G202 2020322090 王瑞峰
+### 计G202 2020322090 王瑞峰
 ## 1.实验目的
 1. 掌握Java中抽象类和抽象方法的定义；
 2. 掌握Java中接口的定义，熟练掌握接口的定义形式以及接口的实现方法
@@ -16,5 +16,40 @@
 - [ ] 3. 国家最新纳税标准（系数），属于某一时期的特定固定值，与实例化对象没有关系，考虑如何用static  final修饰定义。
 - [x] 4. 实例化研究生类时，可采用运行时通过main方法的参数args一次性赋值，也可采用Scanner类实现运行时交互式输入。
 - [x] 5. 根据输入情况，要在程序中做异常处理。
-## 4.实验设计
+## 4. 实验设计
 1. 研究生类各个接口
+```
+interface stJiekou {
+    double getStFee();
+    double checkStFee();
+```
+2. 博士生类的方法
+```
+public class boshisheng extends salary implements stJiekou, thJiekou {
+    private String name;
+    private String gender;
+    private int age;
+    public boshisheng(String name, String gender, int age){
+        this.name = name;
+        this.gender = gender;
+        this.age = age;
+    }
+```
+## 5. 实验运行结果
+```
+请输入第一位博士研究生的工资
+2000
+请输入第一位博士研究生的学费
+6000
+请输入第二位博士研究生的工资
+8000
+请输入第二位博士研究生的学费
+10000
+名字:李花呗 性别:男 年龄:32 工资:24000.0 学费:12000.0 税:1000.0
+名字:孙白条 性别:男 年龄:33 工资:96000.0 学费:20000.0 税:39.99999999999999
+
+进程已结束,退出代码0
+```
+## 6. 实验感想
+1. 了解了各个阶层的工资税收，但没在实验中体现
+2. 实践了接口的应用
